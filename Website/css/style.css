@@ -1,0 +1,147 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+ /* DESIGN */
+ .borderradius1{border-radius: 10px;}
+ .borderradius2{border-radius: 20px;}
+ .border1 {border:solid;}
+ .shadow1 {box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);}
+ .padding1{padding: 20px 15px;}
+ .padding0{padding: 0;}
+ .textShadow1{text-shadow: 1px 1px 2px black;}
+ .width300{width: 300px;}
+ .width50{ max-width: 25%;}
+ .width35{max-width: 5%;}
+ .padding2{padding: 200px 15px; margin: 130px 0 0 0;}
+
+ /* Fonts */
+ h1{color: white; font-weight: 800; font-size: 40px;}
+ h2{color: white; font-weight: 600; font-size: 30px;}
+ h3{color: white; font-weight: 800; font-size: 20px; text-shadow: 1px 1px 2px black;}
+ h4{color: #262626; font-weight: 800; font-size: 40px; text-shadow: 1px 1px 2px black; margin:15px;}
+ h5{color: #262626; font-weight: 800; font-size: 25px; text-shadow: 1px 1px 2px black; margin:15px;}
+ h6{color: #262626; font-weight: 800; font-size: 40px; text-shadow: 1px 1px 2px black; margin:15px; text-color:262626;}
+/* BODY */
+body {
+	font-family: 'Work Sans', sans-serif;
+	margin: 0; /* Removing margin from orign */
+    background-color: #f4f1f1;
+	}
+
+/* NAVBAR */
+	
+	ul {
+		background: rgba(40, 40, 40, 0.6);
+	  list-style-type: none; /* Removing dots from orign */
+	  margin: 0;
+	  padding: 0 50px;
+	  font-weight: 800;
+	  border-bottom: solid;
+	  border-bottom-color: white;
+	  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
+	  position: fixed; /*always at top of screen*/
+	  top: 0;
+	  width: 100%;
+	}
+	  
+	li {
+	  float: left; /* instead display:inline float left/ but this requires a display:block */
+	}
+	.active{}
+	  
+	li a {
+	  display: block; /* a elements will be shown as blocks and has their own width */
+	  color: white;
+	  text-align: center;
+	  
+	  text-decoration: none; /* a elements has their own underline, removing that */
+	  transition: .5s ease;/* for hover animation */
+	}
+
+	li a:hover {color: #fc8c1d;
+	}
+	.dropdownBox {
+	  display: none; /* Hiding Dropdown box */
+	  position: absolute; /* Always under dropdown button */
+	  border-radius: 10%;
+	  min-width: 140px;
+	  z-index: 1; /* over other layers */
+	  transition: .5s ease;
+	}
+	.dropdownBox a{
+		font-weight: 800;
+		color:#1a1a1a;
+		padding: 2px;
+		border-radius:10px;
+		background: rgba(225, 225, 225, 0.8);
+		margin: 10px 0px;}
+	
+	
+	.dropButton:hover .dropdownBox{ display: block; } /* Revealing dropbox when hover on dropButton */
+	li .bannerImg{ height: 50px;
+	margin-right: 100px;}
+	
+	
+	/* HEADER */
+	.mainheader{
+	overflow:hidden;
+	background:url('../images/background.jpg') no-repeat center center;
+	background-size:cover;
+	min-height: 600px;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.9);
+	padding-bottom: 100px;}
+	
+	.mainheader .row{
+		margin-top: 150px;
+		padding: 0 100px;
+	}
+	.mainheader .card {
+		float:right;
+		display: flex;
+		align-items:center;}
+	
+	/* LITTLE HEADER */
+	.littleHeader{
+	overflow:hidden;
+	background:url('../images/background.jpg') no-repeat center center;
+	background-size:cover;
+	max-height: 200px;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.9);
+	padding-bottom: 10px;}
+	
+	.littleHeader .row{
+		margin-top: 100px;
+		padding: 0 100px;
+	}
+	
+	/* Containers*/
+	.container{
+		padding: 30px;
+	overflow:hidden;
+	margin: 5%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background: rgba(258, 258, 258, 0.8);
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.9);
+	text-align: center;}
+	
+	.container .card {
+		padding: 3px 80px;
+	}
+	
+	
+	
+	/* FOOTER SECTION*/
+	footer{
+	overflow:hidden;
+	margin: 10%;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background: url('../images/footer.jpg') no-repeat center center;
+	background-size:cover;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.9);
+	text-align: center;
+	}
+	
+	
